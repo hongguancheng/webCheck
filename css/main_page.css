@@ -1,0 +1,231 @@
+.carousel img {
+    width: 100%;
+}
+
+.carousel {
+    height: 400px;
+    min-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    top: -52px;
+}
+
+.carousel-caption{
+	top:300px;
+}
+
+.h3icon{
+	background: url(../img/icon1.png) no-repeat 100% 100%;
+	background-position: 0px 0px;
+}
+
+.h3icon2{
+	background: url(../img/icon2.png) no-repeat;
+	background-position: 0px -80px;
+}
+
+h3{
+	line-height: 80px;
+	color: #20B295;
+	
+	/* border-bottom: dashed 1px; */
+	padding-bottom: 20px;
+}
+
+.h3icon,.h3icon2{
+	margin-right: 15px;
+	width: 80px;
+	height: 80px;
+	
+	background-size: 100%;
+	border-radius: 50%;
+	float: left;
+}
+
+.list-container ul{
+	  background: #fff;
+	  padding: 10px 0px;
+  	  box-shadow: 0px 4px 10px rgba(0,0,0,.1);
+	  margin-left: 80px;
+	  margin-bottom: 80px;
+	  /* border-bottom-style: dotted; */
+}
+
+.list-container ul li {
+    padding: 18px;
+	cursor: pointer;
+	transition:all linear 0.3s;
+	  font-size: 16px;
+}
+
+.list-container ul li:hover {
+	background-color: #F7F7F7;
+}
+
+.list-container ul li span{
+	float: right;
+}
+
+
+
+
+
+/*button*/
+section, section div {
+  /* See it in slo-mo, you can change this */
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+}
+
+
+
+section, .button { -webkit-transition-timing-function: ease; transition-timing-function: ease; }
+
+section {
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  height: 35px;
+  background: #A9ADB6;
+  border-radius: .25rem;
+  -webkit-perspective: 300;
+          perspective: 300;
+  box-shadow: 0 0px 0px #45B29A, inset 0 1px 2px rgba(0,0,0,.2), inset 0 .25rem 1rem rgba(0,0,0,.1);
+}
+
+
+.button { opacity: 0; }
+
+.cover {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  -webkit-transform-origin: center bottom;
+      -ms-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.innie, .outie, .spine, .shadow { position: absolute; width: 100%; }
+
+.innie, .outie {
+  height: 100%;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.1) 100%);
+  border-radius: .25rem;
+}
+
+
+.innie {
+  background-color: #67E2FE;
+  text-shadow: 0 -2px 4px rgba(0,0,0,.2);
+}
+
+.spine {
+  top: .25rem;
+  background: #20C7F3;
+  height: .25rem;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
+          transform-origin: center top;
+}
+
+.shadow {
+  top: 100%;
+  left: 0;
+  height: 3.5rem;
+  -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  opacity: 0;
+  z-index: 0;
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,.6) 0%, transparent 100%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, transparent 100%);
+  border-radius: .4rem;
+
+}
+
+.outie {
+  background-color: #2EC8FA;
+  -webkit-transform: translateZ(.25rem);
+          transform: translateZ(.25rem);
+  text-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+section:hover { background: #EBEFF2; }
+section:hover .button { opacity: 1; }
+
+section:hover .cover, section:hover .innie, section:hover .spine, section:hover .outie, section:hover .spine { -webkit-transition-timing-function: cubic-bezier(.2,.7,.1,1.1); transition-timing-function: cubic-bezier(.2,.7,.1,1.1); }
+
+section:hover .cover { -webkit-transform: rotateX(-120deg); transform: rotateX(-120deg);  }
+
+section:hover .innie { background-color: #3ADAFC; }
+section:hover .spine { background-color: #52B1E0; }
+section:hover .outie { background-color: #2174A0; color: rgba(255,255,255,0); }
+
+section:hover .shadow { 
+  opacity: 1;
+  -webkit-transform: rotateX(45deg) scale(.95);
+          transform: rotateX(45deg) scale(.95);
+}
+
+.cover img{
+	width: 20px;
+	/* margin-bottom: 0px; */
+	margin-top: 2px;
+}
+
+a.inner-link {
+    line-height: 26px;
+    padding: 0px 5px;
+}
+
+.bottom-bar {
+    height: 200px;
+    background: #C5DED7;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+.info-container{
+	color:#45B29A;
+	float: left;
+    width: 300px;
+    text-align: center;
+}
+
+.bottom-bar {
+}
+
+.bottom-container {
+    width: 602px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.info-container p {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.hr {
+    height: 150px;
+    float: left;
+    width: 2px;
+    background: #45B29A;
+    position: relative;
+    top: -28px;
+}

@@ -1,0 +1,37 @@
+nav.navbar.navbar-default {
+	background-color: #98C0B5;
+}
+.list-container {
+	margin-top: 50px;
+}
+ul.pagination {
+	float: right;
+	margin: -20px 20px 20px 0px;
+	/* display: block; */
+	/* margin: auto; */
+}
+.formula_container {
+	background: #fff;
+	padding: 20px;
+	min-height: 400px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
+	margin-bottom: 30px;
+}
+
+.formula_container h4{
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+
+
+.list-container p {
+    font-size: 20px;
+}
+
+.nametime{
+	float: right;
+	margin-top: 20px;
+	text-align: center;
+}

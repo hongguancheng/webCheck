@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:12px;min-width: 1200px;background-color: #F6F6F6;position: relative;padding-bottom: 200px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;border:none; background:none;}
+textarea{resize:none;}
+a{text-decoration:none; color:#656565;}
+
+/*清浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+
+.bg{
+	position: absolute;
+}
+
+nav.navbar.navbar-default {
+    margin-bottom: 0px;
+    background-color: rgba(255,255,255,0.3);
+    border:none;
+    z-index: 1;
+    border-radius: 0px;
+    
+}
+
+.logo{
+	text-shadow: 0 0 6px rgba(0,0,0,0.6);
+	color: #fff !important;
+}
+
+.navbar-default .navbar-nav>.active>a{
+	background-color: rgba(255,255,255,0.4);
+	text-shadow: 0 0 6px rgba(0,0,0,0.6);
+  	color: #fff !important;
+}
+
+.navbar-default .navbar-nav>li>a{
+	transition: all linear 0.3s;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	text-shadow: 0 0 6px rgba(0,0,0,0.6);
+  	color: #fff !important;
+}
